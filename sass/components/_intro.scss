@@ -22,7 +22,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("/images/intro-bg/intro-bg-mob.jpg");
+      url("./images/intro-bg/intro-bg-mob.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,7 +34,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/intro-bg/intro-bg-mob-2x.jpg");
+        url("./images/intro-bg/intro-bg-mob-2x.jpg");
     }
     @include tablet {
       max-width: 768px;
@@ -44,7 +44,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/intro-bg/intro-bg-tab.jpg");
+        url("./images/intro-bg/intro-bg-tab.jpg");
     }
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -54,7 +54,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/intro-bg/intro-bg-tab-2x.jpg");
+        url("./images./intro-bg/intro-bg-tab-2x.jpg");
     }
 
     @include desktop {
@@ -64,7 +64,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/intro-bg/intro-bg-desk.jpg");
+        url("./images/intro-bg/intro-bg-desk.jpg");
     }
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -74,7 +74,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("/images/intro-bg/intro-bg-desk-2x.jpg");
+        url("./images/intro-bg/intro-bg-desk-2x.jpg");
     }
   }
 
