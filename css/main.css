@@ -478,58 +478,68 @@ body {
   text-align: center;
   background-color: #2f303a;
 }
+@media screen and (min-width: 1200px) {
+  .intro {
+    padding: 200px 0;
+  }
+}
 .intro__overlay {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-mob.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-mob.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-mob.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .intro__overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-mob-2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-mob-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-mob-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-mob-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .intro__overlay {
     max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-tab.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-tab.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-tab.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-tab.jpg");
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .intro__overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-tab-2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-tab-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-tab-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-tab-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .intro__overlay {
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-desk.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-desk.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-desk.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-desk.jpg");
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .intro__overlay {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/intro-bg/intro-bg-desk-2x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/intro-bg/intro-bg-desk-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/intro-bg/intro-bg-desk-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/intro-bg/intro-bg-desk-2x.jpg");
   }
 }
 .intro__title {
   margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
   letter-spacing: 0.06;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .intro__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .intro__btn {
   padding-top: 10px;
@@ -735,7 +745,10 @@ body {
   }
 }
 .team__img {
-  width: 100%;
+  display: block;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .team__info {
   padding-top: 30px;

@@ -4,7 +4,7 @@
 
   &__title {
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       margin-bottom: 50px;
     }
   }
@@ -35,7 +35,10 @@
   }
 
   &__img {
-    width: 100%;
+    display: block;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__info {
