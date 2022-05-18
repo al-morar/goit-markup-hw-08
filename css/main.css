@@ -1198,8 +1198,7 @@ body {
   overflow: hidden;
 }
 .portfolio-gallery__img img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 .portfolio-gallery__box {
   padding-top: 20px;
