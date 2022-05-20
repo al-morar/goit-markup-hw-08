@@ -623,7 +623,7 @@ body {
   text-decoration: none;
   color: #2196f3;
 }
-.mob-soc-list__link--border:nth-child(1) {
+.mob-soc-list__link--border {
   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
 }
 
