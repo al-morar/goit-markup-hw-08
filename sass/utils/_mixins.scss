@@ -9,8 +9,21 @@
     @content;
   }
 }
+
+@mixin max-767 {
+  @media screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin max-1199 {
+  @media screen and (max-width: 1199px) {
     @content;
   }
 }

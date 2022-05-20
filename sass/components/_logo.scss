@@ -2,18 +2,17 @@
   display: inline-block;
   font-family: "Raleway", sans-serif;
   @include font(700, 24px, 0.86, null);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
   text-decoration: none;
-
   color: $blueAccent;
-
   &--white {
     color: $whiteText;
   }
 
   &--black {
     color: $blackText;
+  }
+
+  @include desktop {
+    @include font(null, 26px, 1.19, null);
   }
 }

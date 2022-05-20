@@ -5,10 +5,17 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
-
   .open-icon {
     width: 40px;
     height: 40px;
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: $blueAccent;
+  }
+  @include tablet {
+    display: none;
   }
 }
 
@@ -19,7 +26,8 @@
   margin-left: auto;
   border: none;
   background-color: transparent;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $blueAccent;
   }
 
