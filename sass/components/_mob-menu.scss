@@ -1,0 +1,80 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 10px;
+  overflow: auto;
+  background-color: #fff;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+//----------Menu list-----------------
+.mob-menu-list {
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    @include font(null, 40px, 1.17, 0.02em);
+    &--current {
+      color: $blueAccent;
+    }
+    text-decoration: none;
+    color: $blackText;
+  }
+}
+
+//----------Contacts list-----------------
+.mob-contacts-list {
+  margin-bottom: 64px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__number {
+    text-decoration: none;
+    @include font(null, 34px, 1.17, 0.02em);
+    color: $blueAccent;
+  }
+
+  &__mail {
+    @include font(null, 24px, 1.16, 0.02em);
+    text-decoration: none;
+    color: $greyText;
+  }
+}
+
+//----------Socials list-----------------
+.mob-soc-list {
+  display: flex;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+  }
+  &__link {
+    display: block;
+    @include font(null, 18px, 1.22, 0.02em);
+    text-decoration: none;
+    color: $blueAccent;
+
+    &--border {
+      padding-left: 10px;
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}

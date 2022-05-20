@@ -1,0 +1,31 @@
+.menu-open-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+
+  .open-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menu-close-btn {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    color: $blueAccent;
+  }
+
+  .close-icon {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
+}
