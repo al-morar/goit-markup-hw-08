@@ -1,9 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -32,8 +31,9 @@
   }
 
   &__input {
-    display: block;
-    width: 448px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 40px;
     margin-bottom: 10px;
     padding-left: 42px;
@@ -63,7 +63,7 @@
   }
 
   &__textarea {
-    width: 448px;
+    width: 100%;
     height: 120px;
     margin-bottom: 20px;
     padding-top: 12px;
@@ -134,16 +134,20 @@
 
   &__check-text {
     padding-left: 8px;
-
-    line-height: 1.71;
-
+    line-height: 1.5;
     color: $greyText;
+
+    @media screen and (max-width: 430px) {
+      font-size: 12px;
+    }
   }
 
   &__check-link {
     color: $blueAccent;
   }
   &__btn {
+    display: inline-flex;
+    margin: 0 auto;
     padding-top: 10px;
     padding-right: 55px;
     padding-bottom: 10px;
