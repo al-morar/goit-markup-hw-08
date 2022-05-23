@@ -788,7 +788,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .intro__title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1582,15 +1581,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 .form__title {
-  text-align: center;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  margin: 0;
-  margin-bottom: 12px;
+  text-align: center;
 }
 .form__field:focus-within .form__icon {
   fill: #2196f3;
@@ -1737,7 +1738,7 @@ body {
 }
 .form__check-text {
   padding-left: 8px;
-  line-height: 1.5;
+  line-height: 1.15;
   color: #757575;
 }
 @media screen and (max-width: 430px) {

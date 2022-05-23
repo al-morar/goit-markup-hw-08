@@ -8,7 +8,7 @@
   &__content {
     display: flex;
 
-    @media screen and(max-width:1199px) {
+    @include max-1199 {
       flex-direction: column;
       align-items: center;
       text-align: center;
@@ -19,19 +19,19 @@
       align-items: flex-start;
       justify-content: center;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       align-items: baseline;
     }
   }
 
   &__info {
-    @media screen and (max-width: 1199px) {
+    @include max-1199 {
       margin-bottom: 60px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 162px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       margin-right: 70px;
     }
   }
@@ -75,7 +75,7 @@
   &__socials-heading,
   &__form-heading {
     text-align: center;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       text-align: left;
     }
     margin-bottom: 20px;
@@ -120,12 +120,12 @@
   }
 
   &__form-wrapper {
-    @media screen and (max-width: 1199px) {
+    @include max-1199 {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       margin-left: auto;
     }
   }
@@ -135,7 +135,7 @@
     @media screen and (min-width: 480px) and (max-width: 1199px) {
       min-width: 450px;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       min-width: 570px;
     }
   }
@@ -149,7 +149,7 @@
     padding-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       width: 358px;
       margin-bottom: 0;
     }
@@ -170,7 +170,7 @@
     padding-left: 28px;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       margin-left: 12px;
     }
   }

@@ -1,13 +1,12 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
   &__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    margin: 0;
     margin-bottom: 12px;
+    @include font(700, 20px, 1.15, null);
+    text-align: center;
   }
 
   &__field:focus-within &__icon {
@@ -17,11 +16,7 @@
   &__label {
     display: block;
     margin-bottom: 4px;
-
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include font(400, 12px, 1.16, 0.01em);
 
     color: $greyText;
   }
@@ -77,10 +72,8 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &::placeholder {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.1;
-      letter-spacing: 0.01em;
+      @include font(400, 14px, 1.1, 0.01em);
+
       color: rgba(117, 117, 117, 0.5);
     }
 
@@ -134,9 +127,8 @@
 
   &__check-text {
     padding-left: 8px;
-    line-height: 1.5;
+    @include font(null, null, 1.15, null);
     color: $greyText;
-
     @media screen and (max-width: 430px) {
       font-size: 12px;
     }
