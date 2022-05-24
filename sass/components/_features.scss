@@ -33,14 +33,15 @@
   }
 
   &__item {
+    @include max-1199 {
+      margin-bottom: 30px;
+    }
     @include tablet {
       flex-basis: calc(100% / 2 - 30px);
       margin-left: 30px;
-      margin-bottom: 30px;
     }
     @include desktop {
       flex-basis: calc(100% / 4 - 30px);
-      margin-bottom: 0;
     }
   }
 

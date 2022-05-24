@@ -7,15 +7,16 @@
   }
 
   &__item {
+    margin-bottom: 30px;
     @include tablet {
       flex-basis: calc(100% / 2 - 30px);
-      margin-bottom: 30px;
       margin-left: 30px;
     }
     @include desktop {
       flex-basis: calc(100% / 3 - 30px);
       margin-bottom: 30px;
       margin-left: 30px;
+      // padding-right: 0;
     }
     // flex-basis: calc(100% / 3 - 30px);
     // margin-right: 30px;
@@ -42,6 +43,11 @@
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__img {
@@ -66,6 +72,9 @@
     border-radius: 0px 0px 4px 4px;
 
     background-color: $whiteBg;
+    @include tablet {
+      flex-grow: 1;
+    }
   }
 
   &__title {
