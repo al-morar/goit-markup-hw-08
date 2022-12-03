@@ -35,15 +35,15 @@
       margin-bottom: 30px;
     }
     @include tablet {
-      flex-basis: calc(100% / 2 - 30px);
+      flex-basis: calc( 100% / 2 - 30px );
       margin-left: 30px;
     }
     @include desktop {
-      flex-basis: calc(100% / 4 - 30px);
+      flex-basis: calc( 100% / 4 - 30px );
     }
   }
 
-  &__block {
+  &__group {
     display: flex;
     padding: 25px 0;
     width: 100%;
