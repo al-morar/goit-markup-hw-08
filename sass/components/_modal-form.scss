@@ -88,7 +88,6 @@
     align-items: center;
     margin-bottom: 30px;
   }
-  cursor: pointer;
 
   &__check-input {
     position: absolute;
@@ -112,6 +111,7 @@
     border-radius: 4px;
     opacity: 1;
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 
     .form__check-input:checked + & {
       background-image: url("/images/icon-check.svg");
@@ -129,6 +129,8 @@
     padding-left: 8px;
     @include font(null, null, 1.15, null);
     color: $greyText;
+cursor: pointer;
+
     @media screen and (max-width: 430px) {
       font-size: 12px;
     }
@@ -138,7 +140,6 @@
     color: $blueAccent;
   }
   &__btn {
-    display: inline-flex;
     margin: 0 auto;
     padding-top: 10px;
     padding-right: 55px;
